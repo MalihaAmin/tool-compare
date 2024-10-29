@@ -143,7 +143,7 @@ Rule: Ensure VPC Endpoint for EC2 is enabled in all VPCs in use
      Violating Resource: [aws_vpc.main]  (main.tf:5)
 
      Evidence:
-             | The service EC2 is in use in region us-east-1, but VPC aws_vpc.main
+             | The service EC2 is in use in region eu-west-1, but VPC aws_vpc.main
              | is not configured to use a VPC Endpoint for EC2
 
 
@@ -167,7 +167,7 @@ Rule: Ensure VPC Endpoint for DynamoDB is enabled in all VPCs
 
      Evidence:
          The VPC
-             | aws_vpc.main in region us-east-1 is in use but not leveraging DYNAMODB Endpoint Gateway
+             | aws_vpc.main in region eu-west-1 is in use but not leveraging DYNAMODB Endpoint Gateway
 
 
 -----------------------------------------------

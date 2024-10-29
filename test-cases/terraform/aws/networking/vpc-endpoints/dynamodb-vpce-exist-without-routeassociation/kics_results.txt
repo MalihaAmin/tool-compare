@@ -150,7 +150,7 @@ Platform: Terraform
 
 		030: resource "aws_vpc_endpoint" "dynamodb-vpce-gw" {
 		031:   vpc_id       = aws_vpc.main.id
-		032:   service_name = "com.amazonaws.us-east-1.dynamodb"
+		032:   service_name = "com.amazonaws.eu-west-1.dynamodb"
 
 
 DynamoDB Table Not Encrypted, Severity: MEDIUM, Results: 1

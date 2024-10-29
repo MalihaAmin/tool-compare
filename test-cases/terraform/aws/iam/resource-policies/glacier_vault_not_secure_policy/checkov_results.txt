@@ -49,7 +49,7 @@ Check: CKV_AWS_167: "Ensure Glacier Vault access policy is not public by only al
 		25 |           "Action": [
 		26 |              "glacier:*"
 		27 |           ],
-		28 |           "Resource": "arn:aws:glacier:us-east-1:115553109071:vaults/not_secure_archive"
+		28 |           "Resource": "arn:aws:glacier:eu-west-1:115553109071:vaults/not_secure_archive"
 		29 |        }
 		30 |     ]
 		31 | }

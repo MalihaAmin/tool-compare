@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 locals {
@@ -29,7 +29,7 @@ resource "aws_route_table" "private-rtb" {
 
 resource "aws_vpc_endpoint" "dynamodb-vpce-gw" {
   vpc_id       = aws_vpc.main.id
-  service_name = "com.amazonaws.us-east-1.dynamodb"
+  service_name = "com.amazonaws.eu-west-1.dynamodb"
 }
 
 resource "aws_network_acl" "allow-public-outbound-nacl" {

@@ -1,5 +1,5 @@
 locals {
-  region = "us-east-1"
+  region = "eu-west-1"
   cidr_block = "172.16.0.0/16"
   public_subnet_cidr_block = "172.16.100.0/24"
   quad_zero_cidr_block = "0.0.0.0/0"

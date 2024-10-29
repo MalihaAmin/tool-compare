@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 resource "aws_vpc" "external" {
@@ -47,13 +47,13 @@ resource "aws_route_table_association" "rt2" {
 resource "aws_subnet" "free_1" {
   vpc_id = aws_vpc.external.id
   cidr_block = "10.1.1.128/25"
-  availability_zone = "us-east-1a"
+  availability_zone = "eu-west-1a"
 }
 
 resource "aws_subnet" "free_2" {
   vpc_id = aws_vpc.external.id
   cidr_block = "10.1.1.0/25"
-  availability_zone = "us-east-1b"
+  availability_zone = "eu-west-1b"
 }
 
 resource "aws_db_subnet_group" free {

@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 # No policy attached to this role because it is for testing purposes

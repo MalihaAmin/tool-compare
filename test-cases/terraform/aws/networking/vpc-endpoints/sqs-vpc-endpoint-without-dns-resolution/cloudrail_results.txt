@@ -93,7 +93,7 @@ Rule: Ensure VPC Endpoint for EC2 is enabled in all VPCs in use
      Violating Resource: [aws_vpc.main]  (main.tf:12)
 
      Evidence:
-             | The service EC2 is in use in region us-east-1, but VPC aws_vpc.main
+             | The service EC2 is in use in region eu-west-1, but VPC aws_vpc.main
              | is not configured to use a VPC Endpoint for EC2
 
 
@@ -105,7 +105,7 @@ Rule: Ensure VPC Endpoint for SQS is enabled in all Availability Zones in use a 
      Violating Resource: [aws_vpc.main]  (main.tf:12)
 
      Evidence:
-             | The service SQS is in use in region us-east-1
+             | The service SQS is in use in region eu-west-1
              | which contains a VPC aws_vpc.main.id
              | and the following subnets ['aws_subnet.public-subnet.id']
              | in availability zones {'aws_subnet.public-subnet.availability_zone'}
@@ -120,7 +120,7 @@ Rule: Ensure VPC Endpoint for SQS is enabled in all VPCs in use
      Violating Resource: [aws_vpc.main]  (main.tf:12)
 
      Evidence:
-             | The service SQS is in use in region us-east-1, but VPC aws_vpc.main
+             | The service SQS is in use in region eu-west-1, but VPC aws_vpc.main
              | is not configured to use a VPC Endpoint for SQS
 
 

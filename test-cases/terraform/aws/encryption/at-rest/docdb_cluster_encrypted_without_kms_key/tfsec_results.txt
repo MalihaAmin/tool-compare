@@ -5,7 +5,7 @@
   /src/main.tf:5-12
 
 
-       2 |   region = "us-east-1"
+       2 |   region = "eu-west-1"
        3 | }
        4 | 
        5 | resource "aws_docdb_cluster" "test1" {
@@ -31,7 +31,7 @@
   /src/main.tf:5-12
 
 
-       2 |   region = "us-east-1"
+       2 |   region = "eu-west-1"
        3 | }
        4 | 
        5 | resource "aws_docdb_cluster" "test1" {

@@ -1,14 +1,14 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
   alias = "this"
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
   alias = "peer"
 }
 

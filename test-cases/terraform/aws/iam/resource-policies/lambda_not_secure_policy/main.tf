@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 resource "aws_lambda_function" "my-lambda" {
@@ -35,7 +35,7 @@ resource "aws_lambda_permission" "all" {
   action        = "lambda:*"
   function_name = aws_lambda_function.my-lambda.function_name
   principal     = "s3.amazonaws.com"
-  source_arn    = "arn:aws:s3:::delete-me-us-east-1-permissions-tests"
+  source_arn    = "arn:aws:s3:::delete-me-eu-west-1-permissions-tests"
   source_account = "111111111111"
   qualifier     = aws_lambda_alias.my-lambda-alias.name
 }

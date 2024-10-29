@@ -26,7 +26,7 @@ Check: CKV_AWS_121: "Ensure AWS Config is enabled in all regions"
 		4 | 
 		5 |   account_aggregation_source {
 		6 |     account_ids = ["123456789012"]
-		7 |     regions     = ["us-east-2", "us-east-1", "us-west-1", "us-west-2"]
+		7 |     regions     = ["us-east-2", "eu-west-1", "us-west-1", "us-west-2"]
 		8 |   }
 		9 | }
 

@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 resource "aws_sns_topic" "aws_sns_topic" {
@@ -25,7 +25,7 @@ resource "aws_glacier_vault" "not_secure_archive" {
           "Action": [
              "glacier:*"
           ],
-          "Resource": "arn:aws:glacier:us-east-1:115553109071:vaults/not_secure_archive"
+          "Resource": "arn:aws:glacier:eu-west-1:115553109071:vaults/not_secure_archive"
        }
     ]
 }

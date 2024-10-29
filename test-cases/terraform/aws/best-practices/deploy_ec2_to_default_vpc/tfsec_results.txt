@@ -30,7 +30,7 @@
   /src/main.tf:12-16
 
 
-       9 |   region  = "us-east-1"
+       9 |   region  = "eu-west-1"
       10 | }
       11 | 
       12 | resource "aws_default_vpc" "default" {
